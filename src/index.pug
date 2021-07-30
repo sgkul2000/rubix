@@ -6,60 +6,72 @@ html(lang="en" class="dark")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name="description" content="This is a website to showcase rubix events")
     meta(name="author" content="Shreesh Kulkarni")
-    // link(rel="icon" type="image/x-icon" href="./assets/profile.ico")
+    link(rel="icon" type="image/x-icon" href="./assets/favicon.ico")
     link(rel="stylesheet" href="./assets/style/tailwind.css")
     link(rel="stylesheet" href="./assets/style/main.css")
     script(src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js")
 
   body.antialiased.relative.text-white(class="bg-gray-50 text-gray-800")
-    section#landing(class="w-full h-full md:h-screen w-full flex items-center justify-center relative")
+    section#landing(class="w-full h-screen w-full flex items-center justify-center relative")
+      img#logo(src="./assets/icons/Condensed---White-Circle.png", alt="" class="w-12 h-12 object-center object-contain absolute top-0 left-0 m-10")
+      img#logo(src="./assets/icons/IEEE-CS_LogoTM-black.png", alt="" class="h-12 object-center object-contain absolute top-0 right-0 m-10")
       div.h-full.w-full.background.flex.items-center.justify-center
         div.z-50
+          h4(class="font-normal text-sm text-center mb-0") NISB CS Society Presents
           h1(class="font-bold text-6xl text-center mb-3") Rubix x.0
-          h3(class="font-normal text-4xl text-center mb-2") 00:00:00
-          h6(class="font-normal text-xs text-center text-yellow-500 ") Hold your breath!
-      a(href="#" class="downArrow bounce")
+          h3(class="font-mono font-normal text-2xl text-center mb-2") 
+            span#days 00
+            // |:
+            span#hours 00
+            // |:
+            span#minutes 00
+            // |:
+            span#seconds 00
+          h6#breath(class="font-semi-bold text-xs text-center text-yellow-500 ") Hold your breath!
+      a(href="#about" class="downArrow bounce")
         img(width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=")
     section#about(class="bg-indigo-800 font-bold text-xl py-20 flex justify-center")
       h3(class="title w-10/12 md:w-7/12 text-gray-50 tracking-wide text-center") A week long fest organized and managed by NIE IEEE Student Branch Computer Society which includes signiture events like Reverse Coding and Code Geeks.
     section#events(class="py-20 bg-gray-100")
-      h3(class="text-center font-bold text-4xl tracking-wide mb-20") Events
-      div#code-geeks(class="flex items-center justify-center flex-col lg:flex-row")
-        div(class="lg:w-6/12 px-10 lg:px-32")
+      h3(class="text-center font-bold text-5xl tracking-wide mb-20") Events
+      div#code-geeks(class="flex items-center justify-center flex-col-reverse lg:flex-row my-10")
+        div(class="lg:w-6/12 px-10 lg:px-32 pt-10 lg:pt-0 pt-10 lg:pt-0")
           h4(class="font-bold tracking-wide text-2xl mb-2") Code Geeks
           p Get ready to push your coding skills to the limit and take this challenge head-on, as you battle it out to emerge victorious in this clash of programming wits! 
           
-        div(class="lg:w-6/12")
-          img(src="./assets/images/codegeeks.jpeg" class="rounded-xl mx-10 my-5")
+        div(class="lg:w-6/12 px-2 lg:px-10")
+          img(src="./assets/images/codegeeks.jpeg" class="rounded-xl")
           
-      div#reverse-coding(class="flex items-center justify-center flex-col-reverse lg:flex-row-reverse")
-        div(class="lg:w-6/12 px-10 lg:px-32")
+      div#reverse-coding(class="flex items-center justify-center flex-col-reverse lg:flex-row-reverse my-10")
+        div(class="lg:w-6/12 px-10 lg:px-32 pt-10 lg:pt-0")
           h4(class="font-bold tracking-wide text-2xl mb-2") Reverse Code
           p An online coding contest with a twist! Powered by GeeksforGeeks and Scrimba, with the usual instructions of the question not available to the challenger, only the input and the outputs are provided, it is their duty to come up with the right logic and justify the provided outputs. Reverse Coding can be taken in any language of the participant's choice.
           
-        div(class="lg:w-6/12")
-          img(src="./assets/images/codegeeks.jpeg" class="rounded-xl mx-10 my-5")
-      div#other-events(class="mt-20 px-20 flex flex-col items-center justify-center")
+        div(class="lg:w-6/12 px-2 lg:px-10")
+          img(src="./assets/images/codegeeks.jpeg" class="rounded-xl")
+      div#other-events(class="mt-10 lg:mt-20 lg:px-20 flex flex-col items-center justify-center")
         hr.w-full.my-5
-        div.card(class="flex flex-row items-center")
-          div(class="w-2/12")
+        div.card(class="flex flex-col lg:flex-row items-center")
+          div(class="w-full lg:w-2/12")
             img(src="./assets/images/codegeeks.jpeg", alt="")
-          div(class="w-10/12 h-full px-10")
+          div(class="w-full lg:w-10/12 h-full lg:px-10 py-10 lg:py-5")
             h6(class="font-semi-bold text-xl ") Panel Discussion
             p(class="text-base") NISB-WiE, in association with Geeks for Geeks, is delighted to present Panel Discussion, the signature offering of Inspiro! A discussion revolving around the topic "Women in Technology". Join us as we hear from an eminent panel consisting of women stalwarts who have made great strides in their respective fields, and get to know their wonderful insights on the opportunities, challenges, and various other issues that women who wish to make a career for themselves in technology face in day-to-day life.
         hr.w-full.my-5
-        div.card(class="flex flex-row items-center")
-          div(class="w-2/12")
+        div.card(class="flex flex-col lg:flex-row items-center")
+          div(class="w-full lg:w-2/12")
             img(src="./assets/images/codegeeks.jpeg", alt="")
-          div(class="w-10/12 h-full px-10")
+          div(class="lg:w-10/12 h-full px-10 py-5")
             h6(class="font-semi-bold text-xl ") Random Event
             p(class="text-base") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
         hr.w-full.my-5
           
-    section#sponsors(class="py-20 bg-gray-800 px-20 ")
+    section#sponsors(class="pt-20 bg-gray-800 px-20 ")
       h3(class="font-bold text-3xl tracking-wide text-gray-50 text-center") Our Sponsors
       div#sponsor-wrapper(class="flex items-center justify-center pt-10")
         div#geeks-for-geeks(class="")
           img(src="./assets/images/geeks-logo.svg", alt="")
-    footer(class="text-center my-4 bg-gray-800") Made with ❤️ by Shreesh Kulkarni
+    footer(class="text-center bg-gray-800 text-gray-50 py-20") Made with 🧠 by 
+      a(href="https://nisb.in" class="text-blue-400 hover:underline" target="_blank") Team NISB
     script(src="./assets/js/particle.js")
+    script(src="./assets/js/timer.js")
