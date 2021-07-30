@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "rubix",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sgkul2000/portfolio.git"
+    "url": "https://github.com/sgkul2000/rubix.git"
   },
   "author": "Shreesh Kulkarni <sgkul2000@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/sgkul2000/portfolio/issues"
+    "url": "https://github.com/sgkul2000/rubix/issues"
   },
-  "homepage": "https://github.com/sgkul2000/portfolio#readme",
+  "homepage": "https://github.com/sgkul2000/rubix#readme",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-nightly.2384",
     "@parcel/transformer-pug": "^2.0.0-beta.3.1",
