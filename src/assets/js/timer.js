@@ -12,9 +12,9 @@ var x = setInterval(function () {
 	document.getElementById("seconds").innerHTML = +seconds + "s "
 	if (distance < 0) {
 		clearInterval(x)
-		document.getElementById("days").innerHTML = "SET NEW TIME"
-		document.getElementById("hours").innerHTML = "SET NEW TIME"
-		document.getElementById("minutes").innerHTML = "SET NEW TIME"
-		document.getElementById("seconds").innerHTML = "SET NEW TIME"
+		document.getElementById("days").innerHTML = "00"
+		document.getElementById("hours").innerHTML = "00"
+		document.getElementById("minutes").innerHTML = "00"
+		document.getElementById("seconds").innerHTML = "00"
 	}
 }, 1000)
